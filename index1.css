@@ -1,0 +1,260 @@
+
+html, body{
+    margin: 0;
+}
+
+body{
+    background-color: white;
+    height: 100vh;
+}
+
+.page{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: 20% 30% 50%  ;
+    grid-template-areas: "title"
+                         "main"
+                         "downpage" ;
+    
+}
+
+.title{
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+    color: #1400CA;
+    text-align: center;
+    margin-top: -40px;
+    grid-area: title ;
+
+}
+
+.main{
+    grid-area: "main" ;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+
+.task-text{
+    /* padding: 40px 40%; */
+    border: 4px solid #858585;
+    border-radius: 12px;
+    margin-bottom: 5px;
+    outline: none;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #F7F7F7;
+    color: #858585;
+    transition: 0.5s;
+
+    
+
+}
+
+
+
+
+.task-text::placeholder{
+    color: #858585;
+    font-size: 16px;
+}
+
+.times{
+    display: flex;
+    justify-content:center 
+}
+span{
+    font-size: 25px;
+    color: #858585;
+    font-weight: bold;
+margin-top: 10px;}
+
+.date{
+    padding: 10px 40px;
+    border: 2px solid #858585;
+    border-radius: 10px;
+    background-color:#F7F7F7 ;
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: 0.5s;
+    outline: none;
+    color: #858585;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.clock{
+    padding: 10px 15px;
+    border: 2px solid #858585;
+    border-radius: 10px;
+background-color: #F7F7F7;
+margin-top: 10px;
+margin-left: 10px;
+transition: 0.5s;
+outline: none;
+color: #858585;
+font-size: 20px;
+font-weight: bold;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-add{
+    padding: 25px 30px;
+    border: 4px solid #858585;
+    border-radius: 10px;
+background-color:#F7F7F7 ;
+font-size: 20px;
+color: #858585 ;
+font-weight: bold;
+margin-top: 10px;
+transition: 0.5s;
+outline: none;
+
+}
+
+.btn-clear{
+    padding: 25px 30px;
+    border: 4px solid #858585;
+    border-radius: 10px;
+background-color:#F7F7F7 ;
+font-size: 20px;
+color: #858585 ;
+font-weight: bold;
+margin-top: 10px;
+transition: 0.5s;
+outline: none;
+
+}
+
+.downpage{
+    grid-area: downpage ;
+}
+
+hr{
+    height: 6px;
+    background-color: #858585;
+    margin-top: 40px;
+    
+}
+
+
+ .clock:hover, .date:hover, .newTask:hover{
+    box-shadow: 0 0 20px #1400CA;
+    color: #1400CA;
+
+   
+}
+
+
+
+.btn-clear:hover, .task-text:hover{
+box-shadow: 0 0 20px #1400CA;
+color: #1400CA;
+
+}
+
+.btn-add:hover{
+    box-shadow: 0 0 20px #1400CA;
+    color: #1400CA;
+
+
+    }
+
+
+
+    .container{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content:left;
+align-content: center;
+
+
+    }
+
+.newTask{
+    width: 220px;
+    height: 300px;
+    border: 5px solid #858585;
+    border-radius: 9px;
+    background-color: #F7F7F7;
+    color: #858585;
+    margin: 30px 15px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    
+    
+
+}
+
+
+
+.textTask{
+    margin: 0px 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+.closeTask{
+
+    margin: 10px 0px 0px 180px;
+    opacity: 0;
+    color: #1400CA;
+
+}
+
+
+
+
+
+.taskHour, .taskDate{
+    font-size: 20px;
+    color: #858585;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;  
+
+}
+
+
+.taskDate{
+ margin-top: 170px;   
+}
+
+.taskHour{
+    margin-bottom: 10px;
+}
+
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
